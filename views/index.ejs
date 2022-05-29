@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="indexstyle.css" type="text/css">
+		<title>Recipe List</title>
+	</head>
+    <nav>
+        <a href="/recipes/new">Add a New Recipe</a>
+    </nav>
+	<body>
+        <h1>Welcome to Chili Lab</h1>
+		<ul>
+			<% recipes.forEach(recipe => { %>
+			<li>
+                <%=recipe.title; %>
+                <%=recipe.detail; %>
+                <a href="/recipes/<%=recipe._id; %>"> <%=recipe.title; %> </a>
+                <form action="/recipes/<%=recipe.id %>?_method=DELETE" method="POST" style="display:inline; margin-left:16px;">
+                    <input type="submit" value="DELETE" />
+                </form>
+                <a href="/recipes/<%=recipe._id %>/edit">Edit</a>
+            </li>
+			<% }) %>
+		</ul>
+    </body>
+</html>
