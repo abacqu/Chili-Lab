@@ -16,7 +16,8 @@
 			<% recipes.forEach(recipe => { %>
 			<li>
                 <%=recipe.title; %>
-                <%=recipe.detail; %>
+                <%=recipe.ingredients; %>
+                <%=recipe.steps; %>
                 <a href="/recipes/<%=recipe._id; %>"> <%=recipe.title; %> </a>
                 <form action="/recipes/<%=recipe.id %>?_method=DELETE" method="POST" style="display:inline; margin-left:16px;">
                     <input type="submit" value="DELETE" />
