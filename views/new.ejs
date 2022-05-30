@@ -1,20 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="stylesheet" href="style.css" type="text/css">
-		<title>New Recipe</title>
-	</head>
-	<body>
-		<h1>New Recipe Page</h1>
-		<form action="/recipes" method="POST">
-			Title: <input type="text" name="title" /><br />
-			Ingredients: <input type="textarea" name="ingredients" /><br />
-			Steps: <input type="textarea" name="steps" /><br />
-			Completed: <input type="checkbox" name="completed" /><br />
-			<input type="submit" name="" value="Add Recipe" />
-		</form>
-	</body>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/style.css" type="text/css">
+    <title>New Recipe</title>
+</head>
+<div class="newimage">
+
+    <body>
+        <h1>New Recipe Page</h1>
+        <form action="/recipes" method="POST">
+            Title: <input type="text" name="title" /><br />
+            Ingredients: <input type="textarea" name="ingredients" /><br />
+            Steps: <input type="textarea" name="steps" /><br />
+            Completed: <input type="checkbox" name="completed" /><br />
+            <input type="submit" name="" value="Add Recipe" />
+        </form>
+    </body>
+</div>
+
 </html>

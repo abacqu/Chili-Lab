@@ -4,15 +4,17 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="stylesheet" href="indexstyle.css" type="text/css">
+        <link rel="stylesheet" href="style.css" type="text/css">
 		<title>Recipe List</title>
 	</head>
-    <nav>
+    <div class="mainimage">
+    <nav class="indexnav">
         <a href="/recipes/new">Add a New Recipe</a>
     </nav>
 	<body>
         <h1 class="Indexh1">Welcome to Chili Lab</h1>
-		<ul>
+		<div class="indexcontainer">
+        <ul>
 			<% recipes.forEach(recipe => { %>
 			<li>
                 <%=recipe.title; %>
@@ -26,5 +28,7 @@
             </li>
 			<% }) %>
 		</ul>
+        </div>
     </body>
+    </div>
 </html>

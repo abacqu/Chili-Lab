@@ -23,6 +23,7 @@ db.on('disconnected', () => console.log('mongo disconnected'));
 // Body parser middleware: give us access to req.body
 app.use(express.urlencoded({ extended: true }));
 app.use(methodOverride("_method"));
+app.use(express.static(__dirname + '/designs'));
 
 // Controller - technially just more middleware
 app.use('/recipes', recipesController);

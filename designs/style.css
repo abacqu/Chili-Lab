@@ -1,0 +1,52 @@
+.mainimage {
+    background-image: url('./images/beazy-SeFom14Cuzo-unsplash\ \(1\).jpg');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    min-height: 100%;
+    min-width: 1024px;
+    width: 100%;
+    height: auto;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-position: center;
+
+}
+
+.newimage {
+    background-image: url('./images/lukas-blazek-EWDvHNNfUmQ-unsplash.jpg');
+    background-size: cover;
+    min-height: 100%;
+    min-width: 1024px;
+    width: 100%;
+    height: auto;
+    position: fixed;
+    top: 0;
+    left: 0; 
+}
+
+.showimage {
+    background-image: url('./images/sven-brandsma-jfUW60RvpyY-unsplash.jpg');
+    background-size: cover;
+    min-height: 100%;
+    min-width: 1024px;
+    width: 100%;
+    height:100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.editimage {
+    background-image: url('./images/dana-devolk-x2cNcfz_xXU-unsplash.jpg');
+    background-size: cover;
+    min-height: 100%;
+    min-width: 1024px;
+    width: 100%;
+    height: auto;
+    position: fixed;
+    top: 0;
+    left: 0; 
+}
