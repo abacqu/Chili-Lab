@@ -50,3 +50,140 @@
     top: 0;
     left: 0; 
 }
+
+/* VARIABLES */
+:root {
+    --bright-blue: #63d7f1;
+    --light-blue: #91e4f5;
+    --light-grey: #eff0ee;
+    --lighter-grey: #eaeee4;
+    --sky-blue: #07abd8;
+  }
+  
+  /* GENERAL */
+  body {
+    background: #e9e9e9;
+    font-family: helvetica;
+  }
+  
+  /* CONTAINERS */
+  .regcontainer {
+    width: 80vw;
+    height: 70vw;
+    margin: 50px auto;
+    display: flex;
+    border-radius: 10px;
+    box-shadow: 1px 1px 10px #ddd,
+                -1px -1px 10px #ddd,
+                1px -1px 10px #ddd,
+                -1px 1px 10px #ddd;
+  }
+  .regsidebar {
+    width: 50%;
+    background: url('./images/inside-weather-Uxqlfigh6oE-unsplash.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 10px 0 0 10px;
+  }
+  .registration {
+    width: 50%;
+    background: #f9f9f9;
+    border-radius: 0 10px 10px 0;
+    padding: 15px;
+    box-sizing: border-box;
+    overflow: auto;
+  }
+
+  .showcontainer {
+      display: flex;
+      column-gap: 10px;
+  }
+
+  .showitem1 {
+    border-radius: 15px 50px 30px;
+    background: rgb(236, 236, 236);
+    padding: 20px;
+    width: 300px;
+    height: 200px;  
+  }
+    .showitem2 {
+    border-radius: 15px 50px 30px;
+    background: rgb(236, 236, 236);
+    padding: 20px;
+    width: 300px;
+    height: 200px;  
+  }
+    .showitem3 {
+    border-radius: 15px 50px 30px;
+    background: rgb(236, 236, 236);
+    padding: 20px;
+    width: 75px;
+    height: 25px;  
+  }
+  
+  /* ETC. DECORATION */
+  h1 {
+    font-family: 'Oswald';
+    font-weight: 500;
+    color: var(--bright-blue);
+    border-bottom: 2px solid var(--light-grey);
+  }
+  
+  /* FORMS */
+  
+  fieldset {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    margin: 20px 0;
+  }
+  
+  legend {
+    padding: 0px;
+    font-family: 'Oswald';
+    font-weight: 500;
+    color: var(--sky-blue);
+  }
+  
+  label {
+    font-family: 'Oswald';
+    font-weight: 200;
+    color: var(--bright-blue);
+    display: block;
+  }
+  
+  input {
+    width: 100%;
+    margin: 10px 0;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid var(--lighter-grey);
+    border-radius: 5px;
+  }
+
+  input:focus {
+    outline: 0;
+    border: 1px solid var(--sky-blue);
+  }
+  
+  input[type="submit"] {
+    width: 100%;
+    height: 50px;
+    background: var(--bright-blue);
+    box-shadow: 2px 2px var(--lighter-grey);
+    font-family: 'Oswald';
+    font-size: 1.3em;
+    color: whitesmoke;
+    border: 0px;
+    transition: 0.2s ease-in-out;
+  }
+  input[type="submit"]:hover {
+    cursor: pointer;
+    background: var(--light-grey);
+    box-shadow: 2px 2px var(--light-blue);
+  }
+  
+  textarea {
+    resize: none;
+    height: 75px;
+  }

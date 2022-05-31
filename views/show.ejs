@@ -1,23 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="stylesheet" href="/style.css" type="text/css">
-		<title>Document</title>
-	</head>
-	<body>
-        <div class="showimage">
-		<nav>
-			<a href="/recipes">Back to Recipe Index</a>
-		</nav>
-		<h1><%=recipe.title %></h1>
-		Ingredients: <%= recipe.ingredients%>
-		<br />
-		Steps: <%= recipe.steps%>
-		<br />
-		Completed: <%= recipe.completed %>
-	</body>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/style.css" type="text/css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="showimage">
+        <nav class="shownav">
+            <a href="/recipes">Back to Recipe Index</a>
+        </nav>
+        <h1>
+            <%=recipe.title %>
+        </h1>
+        <div class="showcontainer">
+        <div class="showitem1">
+            Ingredients: <%= recipe.ingredients%>
         </div>
+        <br />
+        <div class="showitem2">
+            Steps: <%= recipe.steps%>
+        </div>
+        <br />
+        <div class="showitem3">
+            Completed: <%= recipe.completed %>
+        </div>
+        </div>
+</body>
+</div>
 </html>

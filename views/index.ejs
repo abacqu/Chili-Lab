@@ -1,34 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="stylesheet" href="style.css" type="text/css">
-		<title>Recipe List</title>
-	</head>
-    <div class="mainimage">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <title>Recipe List</title>
+</head>
+<div class="mainimage">
     <nav class="indexnav">
         <a href="/recipes/new">Add a New Recipe</a>
     </nav>
-	<body>
+
+    <body>
         <h1 class="Indexh1">Welcome to Chili Lab</h1>
-		<div class="indexcontainer">
-        <ul>
-			<% recipes.forEach(recipe => { %>
-			<li>
-                <%=recipe.title; %>
-                <%=recipe.ingredients; %>
-                <%=recipe.steps; %>
-                <a href="/recipes/<%=recipe._id; %>"> <%=recipe.title; %> </a>
-                <form action="/recipes/<%=recipe.id %>?_method=DELETE" method="POST" style="display:inline; margin-left:16px;">
-                    <input type="submit" value="DELETE" />
-                </form>
-                <a href="/recipes/<%=recipe._id %>/edit">Edit</a>
-            </li>
-			<% }) %>
-		</ul>
+        <div class="indexcontainer">
+            <ul>
+                <% recipes.forEach(recipe=> { %>
+                    <li>
+                        <%=recipe.title; %>
+                            <%=recipe.ingredients; %>
+                                <%=recipe.steps; %>
+                                    <a href="/recipes/<%=recipe._id; %>">
+                                        <%=recipe.title; %>
+                                    </a>
+                                    <form action="/recipes/<%=recipe.id %>?_method=DELETE" method="POST">
+                                        <input class="indexinput" type="submit" value="DELETE" />
+                                    </form>
+                                    <form action="/recipes/<%=recipe._id %>/edit">
+                                        <input type="submit" value="EDIT">
+                                    </form>
+                    </li>
+                    <% }) %>
+            </ul>
         </div>
     </body>
-    </div>
+</div>
+
 </html>
