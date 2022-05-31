@@ -97,6 +97,7 @@
   .showcontainer {
       display: flex;
       column-gap: 10px;
+      margin-left: 10px;
   }
 
   .showitem1 {
@@ -129,6 +130,12 @@
     border-bottom: 2px solid var(--light-grey);
   }
   
+  .navshow a {
+      text-decoration: none;
+      
+  }
+
+  a:visited { color: var(--bright-blue); }
   /* FORMS */
   
   fieldset {
@@ -150,6 +157,21 @@
     font-weight: 200;
     color: var(--bright-blue);
     display: block;
+  }
+
+  .indexbutton {
+      width: 50px;
+      height: 15px; 
+  }
+
+  .stepsinput {
+      width: 100%;
+      height: 100px;
+  }
+
+  .editinput {
+    width: 100%;
+    height: 100px;
   }
   
   input {
@@ -185,5 +207,6 @@
   
   textarea {
     resize: none;
-    height: 75px;
+    height: 80px;
+    width: 500px;
   }

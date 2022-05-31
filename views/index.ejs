@@ -25,12 +25,14 @@
                                     <a href="/recipes/<%=recipe._id; %>">
                                         <%=recipe.title; %>
                                     </a>
+                                    <div class="indexbutton">
                                     <form action="/recipes/<%=recipe.id %>?_method=DELETE" method="POST">
                                         <input class="indexinput" type="submit" value="DELETE" />
                                     </form>
                                     <form action="/recipes/<%=recipe._id %>/edit">
                                         <input type="submit" value="EDIT">
                                     </form>
+                                    </div>
                     </li>
                     <% }) %>
             </ul>
