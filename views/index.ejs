@@ -15,28 +15,30 @@
 
     <body>
         <h1 class="Indexh1">Welcome to Chili Lab</h1>
-        <div class="indexcontainer">
+        
             <ul>
                 <% recipes.forEach(recipe=> { %>
                     <li>
-                        <%=recipe.title; %>
-                            <%=recipe.ingredients; %>
-                                <%=recipe.steps; %>
-                                    <a href="/recipes/<%=recipe._id; %>">
-                                        <%=recipe.title; %>
-                                    </a>
+                        <div class="indexcontainer">
+                            <a href="/recipes/<%=recipe._id; %>">
+                                <%=recipe.title; %>
+                            </a>
+                                <%if(recipe.img != null) { %>
+                                    <img src= "<%=recipe.img; %>" width="150" height="200">  
+                               <% } %>
+                                    
                                     <div class="indexbutton">
                                     <form action="/recipes/<%=recipe.id %>?_method=DELETE" method="POST">
                                         <input class="indexinput" type="submit" value="DELETE" />
                                     </form>
                                     <form action="/recipes/<%=recipe._id %>/edit">
-                                        <input type="submit" value="EDIT">
+                                        <input class="indexinput" type="submit" value="EDIT">
                                     </form>
                                     </div>
+                        </div>
                     </li>
                     <% }) %>
             </ul>
-        </div>
     </body>
 </div>
 

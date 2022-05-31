@@ -94,6 +94,19 @@
     overflow: auto;
   }
 
+  .indexcontainer a {
+   display: flex;   
+}
+
+  .indexcontainer {
+    margin-top: 15px;
+    border-radius: 15px 50px 30px;
+    background: rgb(236, 236, 236);
+    padding: 20px;
+    box-sizing: border-box;
+    width: 20%;
+  }
+
   .showcontainer {
       display: flex;
       column-gap: 10px;
@@ -152,7 +165,7 @@
     color: var(--sky-blue);
   }
   
-  label {
+  .reglabel {
     font-family: 'Oswald';
     font-weight: 200;
     color: var(--bright-blue);
@@ -161,7 +174,14 @@
 
   .indexbutton {
       width: 50px;
-      height: 15px; 
+      height: 15px;
+      display: flex;
+      color: var(--bright-blue); 
+  }
+
+  .indexinput {
+    background-color: var(--bright-blue);
+    color: whitesmoke;
   }
 
   .stepsinput {
@@ -174,7 +194,7 @@
     height: 100px;
   }
   
-  input {
+  .reginput {
     width: 100%;
     margin: 10px 0;
     padding: 10px;
@@ -183,12 +203,12 @@
     border-radius: 5px;
   }
 
-  input:focus {
+  .reginput:focus {
     outline: 0;
     border: 1px solid var(--sky-blue);
   }
   
-  input[type="submit"] {
+  .reginput[type="submit"] {
     width: 100%;
     height: 50px;
     background: var(--bright-blue);
@@ -199,7 +219,7 @@
     border: 0px;
     transition: 0.2s ease-in-out;
   }
-  input[type="submit"]:hover {
+  .reginput[type="submit"]:hover {
     cursor: pointer;
     background: var(--light-grey);
     box-shadow: 2px 2px var(--light-blue);
