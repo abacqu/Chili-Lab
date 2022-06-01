@@ -11,25 +11,33 @@
 
 <body>
     <div class="showimage">
+
         <nav class="navshow">
             <a href="/recipes">Back to Recipe Index</a>
         </nav>
         <h1>
             <%=recipe.title %>
         </h1>
-        <div class="showcontainer">
-        <div class="showitem1">
-            Ingredients: <%= recipe.ingredients%>
+        <div class="onediv">
+            <div class="showcontainer">
+                <div class="showitem1">
+                    Ingredients: <%= recipe.ingredients%>
+                </div>
+                <br />
+                <div class="showitem2">
+                    Steps: <%= recipe.steps%>
+                </div>
+                <br />
+                <div class="showitem3">
+                    Completed: <%= recipe.completed %>
+                </div>
+            </div>
+            <div class="showimage2">
+                <img src="<%= recipe.img %>" width="400" height="500">
+            </div>
         </div>
-        <br />
-        <div class="showitem2">
-            Steps: <%= recipe.steps%>
-        </div>
-        <br />
-        <div class="showitem3">
-            Completed: <%= recipe.completed %>
-        </div>
-        </div>
-    </div>    
+    </div>
+
 </body>
+
 </html>
