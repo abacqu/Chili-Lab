@@ -148,6 +148,10 @@
     
   }
 
+  .infocontainer p {
+      margin-top: 2px;
+  }
+
   .showcontainer {
       display: flex;
       column-gap: 10px;
@@ -236,8 +240,8 @@
     background-color: var(--bright-blue);
     color: whitesmoke;
     margin-left: 5px;
-    margin-bottom: 5px;
-    border-radius: 4px; 
+    border-radius: 4px;
+    float: right;
   }
 
   .indexbutton {
