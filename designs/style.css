@@ -54,8 +54,8 @@
 .showimage2 {
     margin-left: 450px;
     border: 5px solid white;
-    width: 400px;
-    height: 500px;
+    /* width: 400px;
+    height: 300px; */
     
 }
 
@@ -65,7 +65,7 @@
 
 /* VARIABLES */
 :root {
-    --bright-blue: #63d7f1;
+    --bright-blue: #87def1;
     --light-blue: #91e4f5;
     --light-grey: #eff0ee;
     --lighter-grey: #eaeee4;
@@ -119,6 +119,8 @@
     padding: 20px;
     box-sizing: border-box;
     width: 20%;
+    border: 4px solid rgb(161, 208, 210);
+    
   }
 
   .showcontainer {
@@ -132,21 +134,24 @@
     background: rgb(236, 236, 236);
     padding: 20px;
     width: 300px;
-    height: 200px;  
+    height: 200px;
+    border: 4px solid #87def1;  
   }
     .showitem2 {
     border-radius: 15px 50px 30px;
     background: rgb(236, 236, 236);
     padding: 20px;
     width: 300px;
-    height: 200px;  
+    height: 200px;
+    border: 4px solid #87def1;  
   }
     .showitem3 {
     border-radius: 15px 50px 30px;
     background: rgb(236, 236, 236);
     padding: 20px;
     width: 75px;
-    height: 25px;  
+    height: 25px;
+    border: 4px solid #87def1;  
   }
   
   /* ETC. DECORATION */
@@ -155,11 +160,16 @@
     font-weight: 500;
     color: var(--bright-blue);
     border-bottom: 2px solid var(--light-grey);
+    font-style: italic;
   }
   
   .navshow a {
       text-decoration: none;
       
+  }
+
+  .indexnav a {
+      text-decoration: none;
   }
 
   a:visited { color: var(--bright-blue); }
