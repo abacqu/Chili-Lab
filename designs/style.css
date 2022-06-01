@@ -232,6 +232,14 @@
     border-radius: 4px;
   }
 
+  .reglinkbtn {
+    background-color: var(--bright-blue);
+    color: whitesmoke;
+    margin-left: 5px;
+    margin-bottom: 5px;
+    border-radius: 4px; 
+  }
+
   .indexbutton {
       width: 50px;
       height: 15px;
