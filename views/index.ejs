@@ -16,14 +16,18 @@
     <body>
         <div class="indexbody">
         <h1 class="Indexh1">Welcome to Chili Lab</h1>
+        <div class="infocontainer">
+            <p>Greetings! Welcome to Chili Lab! We are a growing collective of friends in downtown Austin that get together a few times a month to hangout and make delicious food</p>
+            <p>Though we originally set out to perfect recipes for chili, we decided to branch out and conquer all things edible. Feel free to sign up and submit your own recipe for a chance to be featured on our website!</p>
+        </div>
         
             <ul>
                 <% recipes.forEach(recipe=> { %>
                     <li>
                         <div class="indexcontainer">
-                            <a href="/recipes/<%=recipe._id; %>">
-                                <%=recipe.title; %>
-                            </a>
+                            <form action="/recipes/<%=recipe._id; %>">
+                                <input class="indextitle" type="submit" value="<%=recipe.title; %>" />
+                            </form>
                                 <%if(recipe.img != null) { %>
                                     <img src= "<%=recipe.img; %>" width="150" height="200">  
                                <% } %>

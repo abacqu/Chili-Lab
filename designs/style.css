@@ -127,6 +127,25 @@
     width: 20%;
     border: 4px solid rgb(161, 208, 210);
     
+    
+  }
+
+  .infocontainer {
+    margin-top: 5px;
+    margin-right: 20px;
+    border-radius: 15px 50px 30px;
+    background: rgb(236, 236, 236);
+    padding: 20px;
+    box-sizing: border-box;
+    width: 20%;
+    border: 4px solid rgb(161, 208, 210);
+    float: right;
+    width: 600px;
+    height: 200px; 
+    color: #87def1;
+    font-style: italic;
+    font-weight: 300;
+    
   }
 
   .showcontainer {
@@ -164,7 +183,7 @@
   h1 {
     font-family: 'Oswald';
     font-weight: 500;
-    color: var(--bright-blue);
+    color: #faed26;
     border-bottom: 2px solid var(--light-grey);
     font-style: italic;
     text-align: center;
@@ -201,6 +220,16 @@
     font-weight: 200;
     color: var(--bright-blue);
     display: block;
+  }
+
+  .indextitle {
+    width: auto;
+    height: 19px;
+    display: flex; 
+    margin-bottom: 3px;
+    background-color: var(--bright-blue);
+    color: whitesmoke;
+    border-radius: 4px;
   }
 
   .indexbutton {
