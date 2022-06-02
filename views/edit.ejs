@@ -12,11 +12,11 @@
     <h1>Edit Recipe</h1>
     <form action="/recipes/<%=recipe._id%>?_method=PUT" method="POST">
       <!--  NOTE: the form is pre-populated with values for the server-->
-      Title: <input class="editinput" type="text" name="title" value="<%=recipe.title%>" /><br />
-      Image: <input class="editinput" type="text" name="img" value="<%=recipe.img%>" /><br />
-      Ingredients: <input class="editinput" type="textarea" name="ingredients" value="<%=recipe.ingredients%>" /><br />
-      Steps: <input class="editinput2" type="textarea" name="steps" value="<%=recipe.steps%>" /><br />
-      Completed: <input type="checkbox" name="completed" <% if(recipe.completed
+      <p>Title:</p> <input class="editinput" type="text" name="title" value="<%=recipe.title%>" /><br />
+      <p>Image:</p> <input class="editinput" type="text" name="img" value="<%=recipe.img%>" /><br />
+      <p>Ingredients:</p> <input class="editinput" type="textarea" name="ingredients" value="<%=recipe.ingredients%>" /><br />
+      <p>Steps:</p> <input class="editinput2" type="textarea" name="steps" value="<%=recipe.steps%>" /><br />
+      <p>Completed:</p> <input type="checkbox" name="completed" <% if(recipe.completed
       === true){ %> checked <% } %> />
       <br />
       <input class="editsubmit" type="submit" value="Submit Changes" />

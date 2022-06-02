@@ -21,6 +21,10 @@ router.get('/register', (req, res) => {
     res.render('register.ejs');
 });
 
+router.get('/home', (req, res) => {
+    res.render('home.ejs');
+});
+
 // New
 
 router.get('/new', (req, res) => {
