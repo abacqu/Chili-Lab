@@ -24,3 +24,9 @@ User will be able to edit and delete submissions
 # Heroku Link
 
 https://chililab.herokuapp.com/recipes/home
+
+# Future Plans
+
+Give access to review
+
+Install voting capability
