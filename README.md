@@ -19,7 +19,7 @@ GitHub:
 
 User has ability to browse completed recipes
 
-User has ability to sign up 
+User has ability to create a new recipe 
 
 User will be able to edit and delete submissions
 
@@ -30,5 +30,7 @@ https://chililab.herokuapp.com/recipes/home
 # Future Plans
 
 Give access to review
+
+Ability to log in for voting and review
 
 Install voting capability
