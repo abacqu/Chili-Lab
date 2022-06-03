@@ -10,6 +10,8 @@ JavaScript
 MongoDB
 Express
 NodeJS
+Mongoose
+MongoDB
 
 # Getting Started
 
