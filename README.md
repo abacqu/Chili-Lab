@@ -20,3 +20,7 @@ User has ability to browse completed recipes
 User has ability to sign up 
 
 User will be able to edit and delete submissions
+
+# Heroku Link
+
+https://chililab.herokuapp.com/recipes/home
